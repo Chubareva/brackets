@@ -8,7 +8,7 @@ module.exports = function check(str, bracketsConfig) {
 
   let res=[];
   for(let i  of str.split('')){
-    if (values.includes(i)){
+    if (values.includes(i) && res.length!=0){
       let a = Object.keys(obj).find(key => obj[key] === i);
         if(res.includes(a)){
         res.pop(a);
