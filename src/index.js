@@ -12,7 +12,7 @@ module.exports = function check(str, bracketsConfig) {
       let a = Object.keys(obj).find(key => obj[key] === i);
         if(res.includes(a)){
         res.pop(a);
-        }
+        } else res.push(a);
     }
        else if( keys.includes(i)){
         res.push(i);
